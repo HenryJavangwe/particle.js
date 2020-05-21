@@ -8,11 +8,13 @@ body {
     background-color: rgba(14, 2, 0, 0.877)
 }
 .hero-wrap {
-    background-image: url(./../assets/img/bg2.jpg);
+    /* 
+    background-image: url(./../assets/img/bg2.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
-    align-content: center;
+    */
+    height: 400px;
+    align-content: center; 
 }
 .hero {
     position: initial;
