@@ -2,3 +2,44 @@ body {
     background-color: black;
     color: rgb(255, 166, 0);
 }
+
+/* Hero Section Styles */
+.first {
+    background-color: rgba(14, 2, 0, 0.877)
+}
+.hero-wrap {
+    background-image: url(./../assets/img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    align-content: center;
+}
+.hero {
+    position: initial;
+    top: -150px ;
+    opacity: 0;
+    animation-name: hero;
+    animation-duration: 4.5s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(200px);
+        opacity: 0.4;
+    }
+    75% {
+        transform: translateY(150px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(170px);
+        opacity: .5;
+    }
+}
