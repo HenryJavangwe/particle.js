@@ -4,29 +4,27 @@ body {
 }
 
 /* Hero Section Styles */
-.first {
-    
+nav {
+    position: absolute;
 }
 .hero-wrap {
-    height: 550px;
-    align-content: center; 
+    height: 490px;
+    align-content: center;
+    background-image: url(./../assets/img/bg.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero {
     position: initial;
     top: -150px ;
     opacity: 0;
     animation-name: hero;
-    animation-duration: 4.5s;
-    animation-delay: 4s;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}
-
-.content {
-    background-image: url(./../assets/img/bg2.jpg); 
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    vertical-align: middle;
 }
 
 @keyframes hero {
@@ -39,11 +37,11 @@ body {
         opacity: 0.4;
     }
     75% {
-        transform: translateY(150px);
+        transform: translateY(170px);
         opacity: 1;
     }
     100% {
-        transform: translateY(170px);
+        transform: translateY(200px);
         opacity: .5;
     }
 }
