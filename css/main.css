@@ -13,7 +13,15 @@ nav {
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 50px ;
 }
+@media all and (max-width: 420px){
+    .hero-wrap {
+      text-align: center;
+      margin-bottom: 150px;
+      overflow: hidden;
+    }
+  }
 .hero {
     position: initial;
     top: -150px ;
@@ -42,5 +50,97 @@ nav {
     100% {
         transform: translateY(200px);
         opacity: .5;
+    }
+}
+
+/* Astronaut image styles */
+
+.astro {
+    height: 200px;
+    transform: translateY(-200px);
+    opacity: 0;
+    animation: astro 30s ease 4s infinite normal forwards;
+    position: absolute;
+}
+@keyframes astro {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    12.5% {
+        transform: translateY(-350px);
+        opacity: .8;
+    }
+    25% {
+        transform: translateY(-290px);
+        opacity: .9;
+    }
+    37.5% {
+        transform: translateY(-350px)scale(.9);
+        opacity: .8;
+    }
+    50% {
+        transform: translateY(-290px) scale(.8) ;
+        opacity: .7 ;
+    }
+    62.5% {
+        transform: translateY(-350px) scale(.7);
+        opacity: .6;
+    }
+    75% {
+        transform: translateY(-300px) scale(.6);
+        opacity: .5;
+    }
+    87.5% {
+        transform: translateY(-350px) scale(.5);
+        opacity: .4;
+    }
+    100% {
+        transform: translateY(-300px) scale(.2);
+        opacity: 0;
+    }
+}
+/*  About text content section */
+.content {
+    padding: 60px 40px 90px 40px ;
+    border-radius: 50px;
+    box-shadow: -10px 5px 12px  rgba(188, 186, 194, 0.438);
+    background-color: #4004795b;
+}
+.content, 
+.rocket-wrap {
+    height: 340px;
+    /* padding: 20px; */
+    margin: 0;
+    align-items: center;
+}
+.wrap-rocket {
+    transform: translateY(250px);
+}
+.rocket-wrap {
+    transform: translateY(300px);
+    animation: path 12s linear 2s infinite normal forwards;
+}
+.rocket {
+    position: absolute;
+    animation:
+    rotate 1s linear 1 normal forwards,
+    rocket 3s linear 3s infinite normal forwards;
+}
+@keyframes rotate {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: rotateZ(60deg);
+        opacity: 1;
+    }
+}
+@keyframes path {
+    from {
+        transform:translateX(-800px);
+    }
+    to {
+        transform:translateX(900px);
     }
 }
