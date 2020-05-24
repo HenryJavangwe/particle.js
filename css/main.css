@@ -26,15 +26,7 @@ nav {
     margin-bottom: 100px ;
     padding: 50px;
 }
-@media all and (max-width: 420px){
-    .hero-wrap {
-      text-align: center;
-      margin-bottom: 150px;
-      overflow: hidden;
-    }
-  }
 .hero {
-    position: initial;
     top: -150px ;
     opacity: 0;
     animation-name: hero;
@@ -64,6 +56,17 @@ nav {
     }
 }
 
+@media all and (max-width: 420px){
+    .hero {
+        font-size: 39px;
+    }
+    .hero-wrap {
+      text-align: center;
+      margin-bottom: 150px;
+      overflow: hidden;
+      padding: 0;
+    }
+  }
 /* Astronaut image styles */
 
 .astro {
@@ -125,6 +128,32 @@ nav {
     height: 340px;
     /* padding: 20px; */
     align-items: center;
+}
+@media all and (max-width: 572px ){
+    .content-wrap {
+        padding: 10px;
+    }
+}
+@media all and (max-width: 768px ){
+    .content {
+        padding: 30px 20px 90px 20px;
+    }
+}
+@media all and (max-width: 375px ){
+    .content-wrap {
+        padding: 10px;
+    }
+    .content {
+        padding-top: 30px;
+    }
+}
+@media all and (max-width: 420px ){
+    .content-wrap {
+        padding: 10px;
+    }
+    .content {
+        padding: 30px 20px 90px 20px;
+    }
 }
 .wrap-rocket {
     transform: translateY(250px);
