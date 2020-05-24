@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 /* Cumulative styles to be inherited by multiple/selectors elements */
 body {
     background-color: black;
