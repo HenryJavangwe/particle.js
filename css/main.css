@@ -12,6 +12,16 @@ li a {
     color: white;
 }
 
+/* Index page styles */
+/* carousel styles */
+
+.item {
+    height: 360px;
+}
+.forex {
+    height: 359px;
+}
+
 
 /* Hero Section Styles */
 nav {
@@ -223,3 +233,4 @@ footer{
     background-color: #5e035983;
     border-radius: 22.5px;
 }
+
