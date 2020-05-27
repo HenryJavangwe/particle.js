@@ -270,6 +270,20 @@ nav {
     background-color: #5e035983;
     border-radius: 22.5px;
 }
+/* Contact Us Page Styles */
+.button-send-enquiry {
+    width: 140px;
+    padding: 9px;
+    color: #ffffff;
+    border: #fd9002 solid;
+    background-color: #5e035a73;
+    border-radius: 22.5px;
+}
+.button-send-enquiry:hover {
+    color:#5e035a;
+    border: #fd9002 solid;
+    background-color: #dacfcfe1;
+}
 /* FOOTER Styles */
 
 .Upper-footer {
