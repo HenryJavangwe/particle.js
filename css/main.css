@@ -41,7 +41,7 @@ body {
         background-color: rgba(80, 75, 80, 0.479);
         transform: scale(.8) rotate(-30deg) ;
     }
-    ul {
+    .navbar-nav {
         float: right;
     }
 }
@@ -253,7 +253,23 @@ nav {
         opacity: 0;
     }
 }
-
+/* Social Media Anchor Tag Styles */
+.social-media ul {
+    display: flex;
+    padding-left: 0;
+}
+.social-media ul li {
+    list-style-type: none;
+    margin: 11px;
+    float: left;
+}
+.social-media ul li a {
+    width: 63px;
+    height: 63px;
+    padding: 20px;
+    background-color: #5e035983;
+    border-radius: 22.5px;
+}
 /* FOOTER Styles */
 
 .Upper-footer {
@@ -276,14 +292,5 @@ footer{
 }
 .footer-bottom {
     margin: 100px 0 100px 0;
-}
-.footer-bottom ul {
-    display: flex;
-    margin: 0;
-}
-.footer-bottom ul li a {
-    padding: 20px;
-    background-color: #5e035983;
-    border-radius: 22.5px;
 }
 
