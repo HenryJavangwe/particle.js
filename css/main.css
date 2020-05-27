@@ -12,14 +12,35 @@ li a {
     color: white;
 }
 
+.button-read-more {
+    width: 140px;
+    border-radius: 22.5px;
+    color: white;
+    background-color: rgb(136, 57, 136);
+    padding: 10px 20px;
+}
+
+.button-read-more:hover {
+    background-color: white;
+    color:  rgb(136, 57, 136);
+    text-decoration: none;
+}
+
 /* Index page styles */
 /* carousel styles */
-
-.item {
-    height: 360px;
+h2 .card_title {
+    margin-bottom: 0;
 }
-.forex {
-    height: 359px;
+.card-img-overlay {
+   background-color: #5e035983;
+   padding: 10px 20px;
+}
+.item {
+    height: 450px;
+}
+.forex,
+.modern {
+    height: 448px;
 }
 
 
