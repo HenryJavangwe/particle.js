@@ -16,7 +16,7 @@ li a {
     width: 140px;
     border-radius: 22.5px;
     color: white;
-    background-color: rgb(136, 57, 136);
+    background-color: rgb(89, 82, 128);
     padding: 10px 20px;
 }
 
@@ -24,6 +24,13 @@ li a {
     background-color: white;
     color:  rgb(136, 57, 136);
     text-decoration: none;
+}
+/* ---Header Styles--- */
+.nav-item {
+    background-color: rgba(80, 75, 80, 0.918);
+    margin: 5px;
+    border-left: solid 5px #cc04c283;
+    
 }
 
 /* Index page styles */
