@@ -8,10 +8,6 @@ body {
     color: rgb(255, 166, 0);
 }
 
-li a {
-    color: white;
-}
-
 .button-read-more {
     width: 140px;
     border-radius: 22.5px;
@@ -26,11 +22,29 @@ li a {
     text-decoration: none;
 }
 /* ---Header Styles--- */
-.nav-item {
+.navbar-li {
     background-color: rgba(80, 75, 80, 0.918);
-    margin: 5px;
+    margin: 8px;
     border-left: solid 5px #cc04c283;
-    
+    padding: 8px;
+    transform: rotate(-30deg); 
+    transition: transform .8s ease ;   
+}
+.navbar-li:hover {
+    transform: scale(1.3);
+    border-left: solid 5px #fd9002;
+}
+a.navbar-link {
+    padding: 8px;
+    color: white;
+    vertical-align: middle;
+}
+li a {
+    transition: color 1s, transform 2s;
+}
+li a:hover {
+    color: #fd9002;
+    text-decoration: none;
 }
 
 /* Index page styles */
