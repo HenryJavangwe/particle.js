@@ -5,7 +5,8 @@ html, body {
 /* Cumulative styles to be inherited by multiple/selectors elements */
 body {
     background-color: black;
-    color: rgb(255, 166, 0);
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .button-read-more {
@@ -83,6 +84,7 @@ nav {
 .hero-wrap {
     align-content: center;
     background-image: url(./../assets/img/bg.jpg);
+    width: auto;
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,3 +310,15 @@ footer{
     margin: 100px 0 100px 0;
 }
 
+/* ---Family Page Styles--- */
+
+.family-wrap {
+    background-image: url(../../assets/img/family/fam.jpg);
+    height: 700px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px ;
+    background-position: center;
+    /* background-position-x: -400px; */
+}
