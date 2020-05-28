@@ -8,6 +8,10 @@ body {
     color: #ffffff;
     font-family: 'Titillium Web', sans-serif;
 }
+embed {
+    width: 400px;
+    height: 400px;
+}
 
 .button-read-more {
     width: 140px;
@@ -21,6 +25,21 @@ body {
     background-color: white;
     color:  rgb(136, 57, 136);
     text-decoration: none;
+}
+.more {
+    background-color: #5e035983;
+    color: white;
+    padding: 5px;
+    margin: 55px;
+    border-radius: 10px;
+    transition: border-radius 1s, color .5s, transform 1s;
+}
+.more:hover {
+    text-decoration: none;
+    background-color:#91919159; 
+    color: #fd9002;
+    border-radius: 0;
+    transform: scale(.2);
 }
 /* ---Header Styles--- */
 .navbar-li {
@@ -61,6 +80,10 @@ li a:hover {
 
 /* Index page styles */
 /* carousel styles */
+.carousel h1 {
+    
+}
+
 h2 .card_title {
     margin-bottom: 0;
 }
@@ -85,7 +108,7 @@ nav {
     align-content: center;
     background-image: url(./../assets/img/bg.jpg);
     width: auto;
-    height: 700px;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 100px ;
@@ -108,15 +131,15 @@ nav {
         opacity: 0;
     }
     50% {
-        transform: translateY(200px);
+        transform: translateY(330px);
         opacity: 0.4;
     }
     75% {
-        transform: translateY(170px);
+        transform: translateY(250px);
         opacity: 1;
     }
     100% {
-        transform: translateY(200px);
+        transform: translateY(330px);
         opacity: .5;
     }
 }
@@ -314,11 +337,67 @@ footer{
 
 .family-wrap {
     background-image: url(../../assets/img/family/fam.jpg);
-    height: 700px;
+    height: 800px;
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 100px ;
     background-position: center;
-    /* background-position-x: -400px; */
+}
+.personal-view {
+    border-left: #5e035a98;
+    padding: 15px;
+}
+.Quote {
+    padding: 10px;
+    box-shadow: -5px 5px 20px  rgba(201, 201, 202, 0.521);
+    background-color:  rgba(117, 114, 117, 0.123);
+    
+}
+/* Sports Cars Page Styles */
+.car-wrap {
+    background-image: url(../../assets/img/Sports-cars/gtr.jpg);
+    height: 800px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px ;
+    background-position: center;
+}
+@media all and (max-width:420px){
+    .car-wrap {
+        contain: content;
+        background-size: cover;
+    }
+}
+/* Invest Page Styles */
+.invest-wrap {
+    background-image: url(../../assets/img/invest/invest.jpg);
+    height: 800px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px ;
+    background-position: center;
+}
+/* Tech Page Styles */
+.tech-wrap {
+    background-image: url(../../assets/img/tech/pepper.jpg);
+    height: 800px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px ;
+    background-position: center;
+}
+
+/* ---ABOUT PAGE STYLES--- */
+.contact-wrap {
+    background-image: url(../../assets/img/Exras/satelite.jpg);
+    height: 800px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px ;
+    background-position: center;
 }
