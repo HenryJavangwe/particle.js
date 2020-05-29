@@ -7,6 +7,8 @@
         <title>Particle.js | Sports Cars </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="../../assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"> 
+        <link rel="stylesheet" href="../../assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -47,16 +49,35 @@
                 <h2>Sports Cars | Super Cars | Muscle Cars</h2>
                     <hr>
                 <section class="row ">
-                    <section class="super-car-p col-md-7 col-lg-7 col-sm-12">
-                        <p>
-                            Among a lot of other things, one of my top favorite topics would be Cars. Very powerful and insanely cars. <br>
-                            My love for cars is not unjustified, who wouldn't want a v12 3/5-second super car? And if you can have the best of both worlds by coupling up that up with a v8 5-8 second Muscle, wouldn't that be the very essence of true love and true happiness? Just kidding lol. 
-                        </p>
-                        <p>
-                            Ever since I can remember, I have always loved being behind the steering wheel and often fantasized on the day I would get my first car and how I would set off on the longest road trip ever recorded. <br>
-                            Whether it's images, video reviews or magazine articles, I tend to get drawn in. 
-                            I am a big super and muscle car fanatic. A genuine believer in speed and horsepower. If I had been born under different with access to vehicles, I could have chosen a career in F1 racing, maybe 
-                        </p>
+                    <!-- In this element there's a page split -- left side is the paragraphs and the carousel --right there's the embeded sites -->
+                    <section class="row super-car-p col-md-7 col-lg-7 col-sm-12">
+                        <!-- paragraphs -->
+                        <div class="col">
+                            <p>
+                                Among a lot of other things, one of my top favorite topics would be Cars. Very powerful and insanely cars. <br>
+                                My love for cars is not unjustified, who wouldn't want a v12 3/5-second super car? And if you can have the best of both worlds by coupling up that up with a v8 5-8 second Muscle, wouldn't that be the very essence of true love and true happiness? Just kidding lol. 
+                            </p>
+                            <p>
+                                Ever since I can remember, I have always loved being behind the steering wheel and often fantasized on the day I would get my first car and how I would set off on the longest road trip ever recorded. <br>
+                                Whether it's images, video reviews or magazine articles, I tend to get drawn in. 
+                                I am a big super and muscle car fanatic. A genuine believer in speed and horsepower. If I had been born under different with access to vehicles, I could have chosen a career in F1 racing, maybe 
+                            </p>
+                        </div>
+                        <!-- carousel -->
+                        <div class="col-lg-12 owl-carousel cars-carousel">
+                            <div class="item"><h4>1</h4></div>
+                            <div class="item"><h4>2</h4></div>
+                            <div class="item"><h4>3</h4></div>
+                            <div class="item"><h4>4</h4></div>
+                            <div class="item"><h4>5</h4></div>
+                            <div class="item"><h4>6</h4></div>
+                        </div>
+                        <!-- <div class="col owl-carousel owl-theme owl-loaded">
+                            <div class="owl-nav">
+                                <div class="owl-prev">prev</div>
+                                <div class="owl-next">next</div>
+                            </div>
+                        </div> -->
                     </section>
                     <section class=" col-md-5 col-lg-5 col-sm-12">
                             <div>
@@ -66,6 +87,13 @@
                                 <embed src="http://www.topgear.co.za/huracan-evo-is-the-holy-grail-of-supercar-engines/" type="">
                             </div>
                     </section>
+                </section>
+                <!-- carousel -->
+                <section class="row">
+                    
+                    <!-- <aside class="col">
+                        <iframe width="300px" height="400px" src="https://www.youtube.com/embed/ZYIGp4zQ4aA" frameborder="0"></iframe>
+                    </aside> -->
                 </section>
            </section>
         </main>
@@ -161,11 +189,35 @@
             </div>
         </footer>
         <!-- ---scripts--- -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="../../js/scripts.js"></script>
         <script src="../../js/particles.js"></script>
         <script src="../../js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="../../assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script src="../../assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+        <!-- initializing the carousel -->
+        <script>
+            $('.cars-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:false,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            })
+        </script>
     </body>
 </html>

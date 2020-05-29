@@ -11,6 +11,7 @@ body {
 embed {
     width: 400px;
     height: 400px;
+    margin: 0 0 20px 0;
 }
 
 .button-read-more {
