@@ -365,7 +365,7 @@ footer{
 /* ---Family Page Styles--- */
 
 .family-wrap {
-    background-image: url(../../assets/img/family/fam.jpg);
+    background-image: url(./../assets/img/family/fam.jpg);
     height: 800px;
     width: auto;
     background-repeat: no-repeat;
@@ -385,7 +385,7 @@ footer{
 }
 /* Sports Cars Page Styles */
 .car-wrap {
-    background-image: url(./../../assets/img/Sports-cars/gtr.jpg);
+    background-image: url(./../assets/img/Sports-cars/gtr.jpg);
     height: 800px;
     width: auto;
     background-repeat: no-repeat;
@@ -425,7 +425,7 @@ footer{
 }
 /* Invest Page Styles */
 .invest-wrap {
-    background-image: url(../../assets/img/invest/invest.jpg);
+    background-image: url(./../assets/img/invest/invest.jpg);
     height: 800px;
     width: auto;
     background-repeat: no-repeat;
@@ -435,7 +435,7 @@ footer{
 }
 /* Tech Page Styles */
 .tech-wrap {
-    background-image: url(./assets/img/tech/pepper.jpg);
+    background-image: url(./../assets/img/tech/pepper.jpg);
     height: 800px;
     width: auto;
     background-repeat: no-repeat;
