@@ -9,9 +9,9 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 embed {
-    width: 400px;
-    height: 400px;
-    margin: 0 0 20px 0;
+    width: 440px;
+    height: 300px;
+    margin: 0 0 50px 0;
 }
 
 .button-read-more {
@@ -125,7 +125,6 @@ nav {
     animation-fill-mode: forwards;
     vertical-align: middle;
 }
-
 @keyframes hero {
     0% {
         transform: translateY(-200px);
@@ -144,6 +143,35 @@ nav {
         opacity: .5;
     }
 }
+.hero-get-in-touch {
+    top: -150px ;
+    opacity: 0;
+    animation-name: hero-get-in-touch;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    vertical-align: middle;
+}
+@keyframes hero-get-in-touch {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(330px);
+        opacity: 0.4;
+    }
+    75% {
+        transform: translateY(250px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(300px);
+        opacity: 1;
+    }
+}
+
 
 @media all and (max-width: 420px){
     .hero {
@@ -365,10 +393,34 @@ footer{
     margin-bottom: 100px ;
     background-position: center;
 }
+.cars-carousel {
+    margin-top:20px ;
+}
+.cars-carousel .item {
+    height: 400px;
+}
+.cars-carousel .item .card-img {
+    height: 320px;
+}
+.cars-title {
+    background:rgba(0, 0, 0, 0.075);
+}
 @media all and (max-width:420px){
     .car-wrap {
         contain: content;
         background-size: cover;
+    }
+    .cars-carousel .item .card-img {
+        height: 200px;
+        width: auto;
+        align-self: center;
+    }
+    .cars-carousel .item {
+        height: 300px;
+        width: auto;
+    }
+    .cars-carousel .item .card {
+       background: transparent;
     }
 }
 /* Invest Page Styles */
