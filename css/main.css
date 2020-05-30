@@ -435,7 +435,7 @@ footer{
 }
 /* Tech Page Styles */
 .tech-wrap {
-    background-image: url(../../assets/img/tech/pepper.jpg);
+    background-image: url(./assets/img/tech/pepper.jpg);
     height: 800px;
     width: auto;
     background-repeat: no-repeat;
@@ -446,7 +446,7 @@ footer{
 
 /* ---ABOUT PAGE STYLES--- */
 .contact-wrap {
-    background-image: url(./../../assets/img/Exras/satelite.jpg);
+    background-image: url(./../assets/img/Exras/satelite.jpg);
     height: 800px;
     width: auto;
     background-repeat: no-repeat;
